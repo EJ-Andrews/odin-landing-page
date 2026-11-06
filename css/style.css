@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+    background-color: aliceblue;
+}
+
+header {
+    display: flex;
+    flex-basis: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(32, 86, 148);
+}
+
+header p {
+    width: max-content;
+}
+
+.primarynav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
