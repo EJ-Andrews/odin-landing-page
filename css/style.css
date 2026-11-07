@@ -2,17 +2,27 @@
     box-sizing: border-box;
 }
 
+.wrapper {
+    max-inline-size: 1000px;
+    margin-inline: auto;
+
+}
+
 body {
     font-family: Roboto;
-    background-color: aliceblue;
+
+
 }
+
+/* Above this is supposed to be site-wide settings. */
+/* Below this is supposed to be the header and nav. */
 
 header {
     display: flex;
     flex-basis: auto;
     flex-direction: row;
-    justify-content: space-around;
-    background-color: rgb(32, 86, 148);
+    justify-content: space-evenly;
+
 }
 
 header p {
@@ -25,3 +35,23 @@ header p {
     gap: 1rem;
 }
 
+/* Specifically stuff to do with the first (from the top) section here. */
+
+.row-one {
+    display: flex;
+}
+
+.row-one div {
+    background: peachpuff;
+    border: 4px solid brown;
+    /* height: 100px; */
+    flex: 1 1 0%;
+}
+
+.topleft {
+
+}
+
+.topright {
+
+}
