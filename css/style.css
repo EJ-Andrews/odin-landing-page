@@ -22,12 +22,13 @@ header {
     flex-basis: auto;
     flex-direction: row;
     justify-content: space-evenly;
-
+    background-color: #1F2937;
 }
 
 header p {
     width: max-content;
 }
+
 
 .primarynav ul {
     display: flex;
@@ -49,9 +50,26 @@ header p {
 }
 
 .topleft {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .topright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.topright p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    background-color: grey;
+}
+
+footer {
+    background-color: #1F2937;
 }
