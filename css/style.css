@@ -10,8 +10,7 @@
 
 body {
     font-family: Roboto;
-
-
+    margin: 0;
 }
 
 /* Above this is supposed to be site-wide settings. */
@@ -22,19 +21,16 @@ header {
     flex-basis: auto;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     background-color: #1F2937;
     color: #F9FAF8;
 }
 
 header p {
     width: max-content;
-
+    font-size: 24px;
+    font-weight: 900;
 }
-
-header .button {
-    
-}
-
 
 .primarynav ul {
     display: flex;
@@ -70,6 +66,7 @@ header .button {
 
 .topleft h1 {
     margin-bottom: 0;
+    color: #F9FAF8;
     font-size: 48px;
     font-weight: 900;
 }
@@ -77,10 +74,10 @@ header .button {
 .topleft p {
     font-size: 18px;
     color: #E5E7EB;
+    margin-top: 0;
+    /* margin-bottom: 0; */
 }
-.topleft .button {
-    text-align: ;
-}
+
 /* Below this is specifically the top right section. */
 
 .topright {
@@ -94,43 +91,62 @@ header .button {
     justify-content: center;
     align-items: center;
     height: 200px;
-    width: 300px;
+    width: 350px;
     background-color: grey;
 }
 
-/* Below this is stuff to do with the seconf row. */
+/* Below this is stuff to do with the second row and its info boxes. */
 
 .row-two h2 {
     /* display: flex; */
-    
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
     text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
 .infoboxes {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    
+    margin-bottom: 25px;
+    margin-inline: 50px;
 }
 
 .infoboxes img {
     border-radius: 12px;
-    border: 3px solid #1F2937;
+    border: 3px solid #3882F6;
     max-width: 150px;
     max-height: 150px;
 }
 .infoboxes p {
     text-align: center;
+    min-width: 0;
 }
+
+/* Below here is all row three and the quote. */
 
  .row-three {
     background-color: #E5E7EB;
     font-size: 36px;
     color: #1F2937;
-    font-weight: 900;
+    font-weight: 300;
     font-style: italic;
-    padding: 25px;
+    padding: 50px;
+ }
+
+ .row-three p {
+    padding: 0px 50px;
+ }
+
+ .row-three .quoteperson {
+    text-align: end;
  }
  
+ /* This is row four, herefore referred to as the call to action. */
+
  .cta {
     display: flex;
     background-color: #3882F6;
@@ -138,10 +154,11 @@ header .button {
     align-items: center;
     justify-content: space-around;
     /* max-inline-size: 800px; */
-    margin: 50px;
+    margin: 25px 50px;
     border-radius: 12px;
-
  }
+
+ /* The parameters for the button class are being used for the CTA button as well as the button in row one, left side. */
 
  .button {
     display: flex;
@@ -158,5 +175,4 @@ footer {
     text-align: center;
     color: #F9FAF8;
     padding: 15px;
-
 }
